@@ -45,7 +45,7 @@
         const newPassword = bcrypt.hashSync(password, salt);
 
         const response = await fetch(
-        `https://ais-simulated-legacy.onrender.com/api/students`,{
+        `http://localhost:4000/auth/register`,{
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
