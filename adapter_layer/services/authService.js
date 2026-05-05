@@ -13,3 +13,10 @@ export const registerStudent = async (studentProfile) => {
 
     return await AuthAdapter.create(studentProfile);
 }
+
+export const getStudentProfile = async (studentId) => {
+    if (!studentId) {
+        throw new Error('Student ID is required');
+    }
+    return await AuthAdapter.findById(studentId);
+};

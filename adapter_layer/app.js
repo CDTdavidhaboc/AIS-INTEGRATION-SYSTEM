@@ -25,7 +25,7 @@ app.listen(process.env.PORT || 4000, () => {
 }
 
 
-app.use('/auth', authRoutes);
+app.use('/user', authRoutes);
 
 
 /*try{
